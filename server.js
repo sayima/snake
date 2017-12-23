@@ -20,7 +20,7 @@ const isFile=function(file){
 }
 
 const requestHandler= function(request,response){
-  let file=request.url=='/'? 'snake.html' :request.url.slice(1);
+  let file=request.url=='/'? 'index.html' :request.url.slice(1);
   if(isFile(file)){
     let contentType = getContentType(file);
     response.writeHead(200,{'Content-Type':contentType});
