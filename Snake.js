@@ -17,7 +17,6 @@ const loadGame = function(){
   snakeFood=new Food('red',cellSize);
   draw();
   window.addEventListener('keydown',keyPressed);
-
 };
 
 const limit= function(x,dx,lastPossibleX){
@@ -174,56 +173,3 @@ let startGame = function(){
 }
 
 window.onload = startGame
-
-
-
-
-
-
-
-// let Snake = function(x,y,color){
-//   // this._length =0;
-//   this.xSpeed;
-//   this.ySpeed;
-//   this.x;
-//   this.y;
-//   // this.head=new Cell(x,y,color);
-//   // this.head.length=this._length;
-// };
-//
-// Snake.prototype={
-//   update :function(){
-//
-//   },
-//   getHeadPosition : function(){
-//     return {x:this.head.x,y:this.head.y};
-//   },
-//   grow :function(){
-//     this._length++;
-//   },
-//   draw : function(){
-//     this.head.draw(this._length);
-//     this.move();
-//   },
-//   getFood : function(x,y,color){
-//     let food = new Cell(x,y,color);
-//     return food;
-//   },
-//   moveDown : function(){
-//     this.head.y+=1;
-//     return this.head;
-//   },
-//   moveUp : function(){
-//     this.head.y-=1;
-//     return this.head;
-//   },
-//   moveRight : function(){
-//     this.head.x+=1;
-//     return this.head;
-//   },
-//   moveLeft : function(){
-//     this.head.x-=1;
-//     return this.head;
-//   }
-// };
-// module.exports=Snake;
